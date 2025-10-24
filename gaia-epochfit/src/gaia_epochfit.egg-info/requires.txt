@@ -1,0 +1,12 @@
+numpy
+scipy
+astropy>=5
+astroquery
+pandas
+matplotlib
+astromet
+scanninglaw
+pymc>=5
+exoplanet[extras]>=0.5
+arviz
+tqdm

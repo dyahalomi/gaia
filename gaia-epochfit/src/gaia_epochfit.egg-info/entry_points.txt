@@ -1,0 +1,2 @@
+[console_scripts]
+gepochfit = gaia_epochfit.cli:main

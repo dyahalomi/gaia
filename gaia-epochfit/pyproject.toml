@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaia-epochfit"
+version = "0.1.0"
+description = "Simulate and fit Gaia-like epoch astrometry for N-planet systems"
+authors = [{name="Your Name"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "astropy>=5",
+  "astroquery",
+  "pandas",
+  "matplotlib",
+  "astromet",        # zpenoyre/astromet.py
+  "scanninglaw",     # for Gaia nominal scanning law lookups
+  "pymc>=5",
+  "exoplanet[extras]>=0.5",
+  "arviz",
+  "tqdm",
+  # Optional backends below—install as needed
+  # "orvara",
+  # "octofitterpy",
+  # "orbitize",
+]
+
+[project.scripts]
+gepochfit = "gaia_epochfit.cli:main"
